@@ -1,0 +1,21 @@
+﻿@page "/atobtest"
+
+
+<h3>AtoBTest</h3>
+
+<AtoBTest_Aobject OnTextChanged="UpdateText" />
+
+<h4>↓↓↓↓↓↓ＡのテキストにいれたものをＢのオブジェクトに入れる</h4>
+
+<AtoBTest_Bobject Text="@text" />
+
+
+
+@code {
+    private string text = "Initial Text";
+
+    private void UpdateText(string newText)
+    {
+        text = newText;
+    }
+}
